@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zircon Home Page</title>
+    <!-- Link Swiper's CSS -->
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://kit.fontawesome.com/f2178052c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/profile-card.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+
+
+
+</head>
+<body style="font-family: Cairo, sans-serif">
+<div class="container-fluid">
+    <div class="main">
+
+        <div style="text-align: right">
+            <div class="row">
+
+                <div class="col-lg-5 col-md-12 pr__card" >
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card pr_card">
+                                <img class="card-img-top w-100 d-block img-card-2" src="assets/img/banner.png">
+                                <img class="card-img-1 " src="assets/img/user-example.jpg">
+                                <div class="card-body">
+                                    <div class="card__title"><h4 class="" style="color: #FFFFFF;">مستخدم للموقع
+                                        <span id="verfiy_div"></span> </h4></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <form action="#" method="post" id="update_p_form">
+                                <div class="row">
+                                    <div class="col-12 pr_in_text">
+                                        <p id="pr_title">تعديل البروفايل</p>
+                                        <hr>
+                                        <div class="input-box">
+                                            <i class="fas fa-user"></i>
+                                            <input type="text" placeholder="ادخل اسمك بالكامل (باللغة العربية)" name="full_name" required >
+                                        </div>
+                                        <div class="input-box">
+                                            <i class="fas fa-envelope"></i>
+                                            <input type="email" placeholder="ادخل بريدك الالكتروني" required >
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 pr_in_text">
+                                        <p id="pr_title">تعديل الارقام</p>
+                                        <hr>
+                                        <div class="input-box">
+                                            <i class="fa fa-phone"></i>
+                                            <input type="text" placeholder="ادخل رقمك الشخصي" required name="phone" >
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-12 pr_in_text">
+                                        <p id="pr_title">تعديل كلمة المرور</p>
+                                        <hr>
+
+                                        <div class="input-box">
+                                            <i class="fas fa-lock"></i>
+                                            <input type="password" placeholder="ادخل كلمة المرور القديمة" name="login_old_pass" >
+                                        </div>
+                                        <div class="input-box">
+                                            <i class="fas fa-lock"></i>
+                                            <input type="password" placeholder="ادخل كلمة المرور الجديدة" name="login_new_pass" >
+                                        </div>
+                                        <div class="input-box">
+                                            <i class="fas fa-lock"></i>
+                                            <input type="password" placeholder="تأكيد كلمة المرور الجديده" name="login_newc_pass" >
+                                        </div>
+                                        <div id="profile_update"></div>
+                                        <div class="button input-box">
+                                            <input type="submit" value="تعديل" style="text-align: center;" name="update_btn">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-12 pr__card" >
+                    <div class="row">
+                        <div class="col-12 pr_in_text" style="margin-top: 0;margin-left: 3rem;">
+                            <p id="pr_title">الافلام المفضلة</p>
+                            <hr>
+                            <div class="swiper mySwiper" style="background: #22222b;padding-right: 15px;padding-top: 11px;padding-left: 15px;border-radius: 15px;padding-bottom: 27px;">
+
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="card movie-card" style="width: 80%;"><img class="card-img w-100 d-block" src="assets/img/thebatman.jpg?h=1929a1297091624e61dda51a1953f5e3">
+                                                <div class="card-img-overlay">
+                                                    <div data-bss-hover-animate="tada" style="background: rgba(34,34,43,0.46);color: #ffffff;text-align: center;border-radius: 15px;padding-top: 20px;padding-bottom: 15px;padding-right: 10px;padding-left: 10px;margin-top: 55%;">
+                                                        <p style="padding: 0px;padding-top: 0px;">The Batman(2022)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide"><a href="#">
+                                        <div class="card" style="width: 80%;"><img class="card-img w-100 d-block" src="assets/img/spiderman.jpg?h=a73262951cd6c2f050cb8354485fa32e">
+                                            <div class="card-img-overlay">
+                                                <div data-bss-hover-animate="tada" style="background: rgba(34,34,43,0.46);color: #ffffff;text-align: center;border-radius: 15px;padding-top: 20px;padding-bottom: 15px;padding-right: 10px;padding-left: 10px;margin-top: 55%;">
+                                                    <p style="padding: 0px;padding-top: 0px;">Spider-Man: No Way Home<br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></div>
+                                    <div class="swiper-slide"><a href="#">
+                                        <div class="card" style="width: 80%;"><img class="card-img w-100 d-block" src="assets/img/doctor.jpg?h=d1a6789b2a1886c821fb14d87e33d402">
+                                            <div class="card-img-overlay">
+                                                <div data-bss-hover-animate="tada" style="background: rgba(34,34,43,0.46);color: #ffffff;text-align: center;border-radius: 15px;padding-top: 20px;padding-bottom: 15px;padding-right: 10px;padding-left: 10px;margin-top: 55%;">
+                                                    <p style="padding: 0px;padding-top: 0px;">Doctor Strange in the Multiverse of Madness<br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></div>
+                                    <div class="swiper-slide"><a href="#">
+                                        <div class="card" style="width: 80%;"><img class="card-img w-100 d-block" src="assets/img/Fantastic.jpg?h=f790f192ae93f4622c0568670e7ad791">
+                                            <div class="card-img-overlay">
+                                                <div data-bss-hover-animate="tada" style="background: rgba(34,34,43,0.46);color: #ffffff;text-align: center;border-radius: 15px;padding-top: 20px;padding-bottom: 15px;padding-right: 10px;padding-left: 10px;margin-top: 55%;">
+                                                    <p style="padding: 0px;padding-top: 0px;">Fantastic Beasts: The Secrets of Dumbledore<br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="card movie-card" style="width: 80%;"><img class="card-img w-100 d-block" src="assets/img/thebatman.jpg?h=1929a1297091624e61dda51a1953f5e3">
+                                                <div class="card-img-overlay">
+                                                    <div data-bss-hover-animate="tada" style="background: rgba(34,34,43,0.46);color: #ffffff;text-align: center;border-radius: 15px;padding-top: 20px;padding-bottom: 15px;padding-right: 10px;padding-left: 10px;margin-top: 55%;">
+                                                        <p style="padding: 0px;padding-top: 0px;">The Batman(2022)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide"><a href="#">
+                                        <div class="card" style="width: 80%;"><img class="card-img w-100 d-block" src="assets/img/spiderman.jpg?h=a73262951cd6c2f050cb8354485fa32e">
+                                            <div class="card-img-overlay">
+                                                <div data-bss-hover-animate="tada" style="background: rgba(34,34,43,0.46);color: #ffffff;text-align: center;border-radius: 15px;padding-top: 20px;padding-bottom: 15px;padding-right: 10px;padding-left: 10px;margin-top: 55%;">
+                                                    <p style="padding: 0px;padding-top: 0px;">Spider-Man: No Way Home<br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></div>
+                                    <div class="swiper-slide"><a href="#">
+                                        <div class="card" style="width: 80%;"><img class="card-img w-100 d-block" src="assets/img/doctor.jpg?h=d1a6789b2a1886c821fb14d87e33d402">
+                                            <div class="card-img-overlay">
+                                                <div data-bss-hover-animate="tada" style="background: rgba(34,34,43,0.46);color: #ffffff;text-align: center;border-radius: 15px;padding-top: 20px;padding-bottom: 15px;padding-right: 10px;padding-left: 10px;margin-top: 55%;">
+                                                    <p style="padding: 0px;padding-top: 0px;">Doctor Strange in the Multiverse of Madness<br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></div>
+                                    <div class="swiper-slide"><a href="#">
+                                        <div class="card" style="width: 80%;"><img class="card-img w-100 d-block" src="assets/img/Fantastic.jpg?h=f790f192ae93f4622c0568670e7ad791">
+                                            <div class="card-img-overlay">
+                                                <div data-bss-hover-animate="tada" style="background: rgba(34,34,43,0.46);color: #ffffff;text-align: center;border-radius: 15px;padding-top: 20px;padding-bottom: 15px;padding-right: 10px;padding-left: 10px;margin-top: 55%;">
+                                                    <p style="padding: 0px;padding-top: 0px;">Fantastic Beasts: The Secrets of Dumbledore<br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+<script src="../../scripts/jquery.min.js"></script>
+<script src="../../scripts/jquery.form.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: false,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+</body>
+
+</html>
