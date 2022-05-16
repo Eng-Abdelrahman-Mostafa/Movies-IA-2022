@@ -1,0 +1,13 @@
+.actor-card{
+    background-color: #1e1f2c;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+}
+.actor-card img{
+    border-radius: 50%;
+}
+.actor-card p{
+    color: #feab21;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
