@@ -251,4 +251,8 @@ footer .contact-us i {
 .copy-right p span {
     color: var(--main-color);
 }
+/* swiper */
+.swiper-button-next ,.swiper-button-prev{
+    color: #f9ad21;
+}
 
