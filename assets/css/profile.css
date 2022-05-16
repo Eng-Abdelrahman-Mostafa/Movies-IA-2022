@@ -7,7 +7,7 @@
 
 }
 .pr_in_text{
-    background: var(--container-color);
+    background: #22222b;
     margin-left: 15px;
     padding-bottom: 20px;
     width: 100%;
@@ -40,7 +40,7 @@
     font-weight: 500;
     transition: all 0.3s ease;
     text-align: right;
-    background-color: var(--container-color);
+    background-color: #22222b;
     color: #FFFFFF;
 }
 .input-box input:focus,
@@ -66,7 +66,7 @@
 }
 .input-box i{
     position: absolute;
-    color: var(--first-color);
+    color: #feab21;
     font-size: 17px;
     right: 0;
 }
@@ -76,7 +76,7 @@
 }
 .button input{
     color: #fff;
-    background: var(--first-color);
+    background: #feab21;
     border-radius: 6px;
     padding: 0;
     cursor: pointer;
@@ -92,9 +92,9 @@
     }
 }
 .btnAdd{
-    color: var(--first-color);
+    color: #feab21;
     margin-right: 15px;
-    background-color: var(--container-color);
+    background-color: #22222b;
     border-style: none;
 }
 .actor-card{
@@ -106,7 +106,7 @@
     border-radius: 50%;
 }
 .actor-card p{
-    color: var(--first-color);
+    color: #feab21;
     font-size: 1.5rem;
     margin-top: 25px;
 }
