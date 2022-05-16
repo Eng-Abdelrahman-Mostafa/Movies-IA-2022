@@ -16,7 +16,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#pr_title{
+.pr_title{
     color: #FFFFFF;
     margin-top: 18px;
     margin-bottom: -5px;
@@ -90,4 +90,23 @@
     .pr_in_text{
         margin-left: 0;
     }
+}
+.btnAdd{
+    color: var(--first-color);
+    margin-right: 15px;
+    background-color: var(--container-color);
+    border-style: none;
+}
+.actor-card{
+    background-color: var(--body-color);
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+}
+.actor-card img{
+    border-radius: 50%;
+}
+.actor-card p{
+    color: var(--first-color);
+    font-size: 1.5rem;
+    margin-top: 25px;
 }
