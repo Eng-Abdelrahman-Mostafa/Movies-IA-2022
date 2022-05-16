@@ -1,0 +1,254 @@
+/*GoogleFonts*/
+@import url('https://fonts.gooleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+   scroll-padding-top: 2rem;
+}
+/*some Varibles*/
+:root{
+    --main-color:#ffb43a ;
+    --haver-color:hsl(37,94,57%) ;
+    --body-color: #1e1e2a;
+    --container-color:#2d2e37 ;
+    --text-color:#fcfeff ;
+    
+}
+a{
+     text-decoration: none;
+}
+li{
+     list-style: none;
+}
+section{
+    padding: 3rem 0 2rem;
+}
+img{
+     width:100%;
+}
+.bx{
+    cursor: pointer;
+}
+body{
+     color: var(--text-color);
+     background: var(--body-color);
+ }
+ .container{
+   max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--body-color);
+    z-index:100;
+}
+/*Nav*/
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.logo{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform:uppercase ;
+    margin: 0 auto 0 0;
+}
+.logo span{ 
+ color: var(--main-color);
+}
+/*search_box*/ 
+.search-box{
+    max-width:240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 8px 15px;
+    background: var(--container-color);
+    border-radius: 4rem;
+    margin-right: 1rem;
+}
+.search-box .bx{
+    font-size: 1.1rem;
+}
+.search-box .bx:hover{
+    color: var(--main-color);
+}
+#search-input{
+    width:100%;
+    border:none;
+    outline:none;
+    color: var(--text-color);
+    background: transparent;
+    font-size:  0.938em;
+}
+/*user*/
+.user{
+    display: flex;    
+}
+.user-img{
+  width:40px;
+  height: 40px; 
+  border-radius: 50%; 
+  object-fit: cover;
+  object-position:  center;
+}
+/*login*/
+.login_btn{
+    background: #f9ad21;
+    font-family: cairo;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border-style: none;
+    padding: 4px 15px 4px 15px;
+}
+/*Navbar*/
+.navbar{
+    position: fixed;
+    top:50%;
+    transform: translateY(-50%);
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+}
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b7b7b7;
+}
+.nav-link:hover,
+.nav-active{
+    color: var(--text-color);
+    transition: 0.3s all linear;
+    transform: scale(1.1);
+}
+.nav-link .bx{
+    font-size: 1.6rem;
+}
+.nav-link-title{
+    font-size: 0.7rem;
+}
+/*Home*/
+.home{
+    position: relative;
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem !important;
+    border-radius:0.5rem ;
+}
+.home-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.home-text{
+    padding-left: 40px;
+}
+.home-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.home-text p{
+    font-size: 0.938rem;
+    margin: 10px 0 20px;
+    color: var(--main-color);
+}
+.watch-btn{
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+    color: var(--text-color);
+}
+.watch-btn .bx{
+    font-size: 21px;
+    background: var(--main-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-btn span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+/*-------------footer-------------*/
+footer {
+    padding: 40px 0;
+    border-top: 0.25rem solid var(--container-color);
+}
+footer .brand {
+    width: 100px;
+    display: flex;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.brand img{
+    width: 80px;
+}
+.dokan{
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+footer .icons {
+    display: flex;
+    margin-top: 20px;
+}
+footer .icons span {
+    background-color: var(--container-color);
+    color: var(--main-color);
+    font-size: 22px;
+    padding: 0 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+footer .box-two {
+    padding: 0 15px;
+}
+
+footer .contact-us {
+    display: flex;
+}
+
+footer .contact-us p:last-child {
+    color: var(--main-color);
+}
+footer .contact-us i {
+    font-size: 58px;
+    color: var(--container-color);
+    margin-right: 15px;
+}
+
+.copy-right {
+    border: 5px solid var(--container-color);
+    padding: 20px;
+}
+.copy-right p {
+    color: var(--light-text);
+    text-align: center;
+    font-size: 18px;
+}
+.copy-right p span {
+    color: var(--main-color);
+}
+
